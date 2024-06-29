@@ -55,6 +55,14 @@ async function fetchTodos() {
 }
 
 fetchTodos();
+useSeoMeta({
+  title: "Data fetching",
+  ogTitle: "Data fetching",
+  description: "Nuxt 3 minimal starter",
+  ogDescription: "Nuxt 3 minimal starter",
+  ogImage: "https://nuxtjs.org/social.png",
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style scoped></style>

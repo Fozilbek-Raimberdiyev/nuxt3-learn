@@ -36,6 +36,15 @@ interface IProduct {
 const { data: product } = await useFetch(
   `https://fakestoreapi.com/products/${params.id}`
 );
+
+useSeoMeta({
+  title: productC.value.title,
+  ogTitle: productC.value.title,
+  description: productC.value.description,
+  ogDescription: productC.value.description,
+  ogImage: productC.value.image,
+  twitterCard: "summary_large_image",
+});
 </script>
 
 <style scoped>

@@ -52,6 +52,14 @@ const { data: products } = await useAsyncData("photos", async () => {
   return resJson;
   //   return $fetch("https://jsonplaceholder.typicode.com/photos");
 });
+
+useSeoMeta({
+  title: "Bosh sahifa",
+  ogTitle: "Bosh sahifa",
+  description: "Nuxt 3 minimal starter",
+  ogDescription: "Nuxt 3 minimal starter",
+  ogImage: "https://nuxtjs.org/social.png",
+});
 </script>
 
 <style scoped>
